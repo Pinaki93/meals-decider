@@ -1,4 +1,4 @@
-package dev.pinaki.mealdecider
+package dev.pinaki.mealdecider.ui.activities
 
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
@@ -9,11 +9,12 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import dev.pinaki.mealdecider.R
 import dev.pinaki.mealdecider.util.bounce
 import dev.pinaki.mealdecider.util.centre
 import kotlinx.android.synthetic.main.layout_splash.*
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         tv_meal_chooser.setOnClickListener {
             meal_chooser_container.bounce(onAnimationEnd = {
                 //                performExitAnimation()
-                startActivity(Intent(this, Main2Activity::class.java))
+                startActivity(Intent(this, MealDeciderActivity::class.java))
             })
         }
     }
