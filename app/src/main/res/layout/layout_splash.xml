@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root_layout"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:shape_arc_height="48dp"
+            app:shape_arc_position="bottom">
+
+        <FrameLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <FrameLayout
+                    android:id="@+id/meal_chooser_container"
+                    android:background="@drawable/bg_circle"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center">
+
+                <ImageView
+                        android:id="@+id/iv_meal_chooser"
+                        android:layout_gravity="center"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:tint="@color/egg_shell"
+                        android:src="@drawable/ic_local_pizza_black_48dp"/>
+            </FrameLayout>
+
+        </FrameLayout>
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="16dp"
+            android:layout_weight="1">
+
+        <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_meal_chooser"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                android:textSize="48sp"
+                app:fontFamily="@font/lobster_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textview.MaterialTextView
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="@color/outer_space"
+                android:text="@string/splash_bottom_text"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

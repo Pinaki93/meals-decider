@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#DE9151</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#BE5A38</color>
+    <color name="persian_orange">#DE9151</color>
+    <color name="copper">#B67743</color>
+    <color name="bg_color">#fffffc</color>
+    <color name="black">#000000</color>
+    <color name="outer_space">#454955</color>
+    <color name="egg_shell">#F0F0C9</color>
+    <color name="dark_sky_blue">#86BBD8</color>
 </resources>

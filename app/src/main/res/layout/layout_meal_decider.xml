@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data
+            class="MealsDeciderBinding"
+    />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!--
+
+        1. Show the category of  meal (Breakfast/Lunch/Evening Snack/ Brunch)
+        2. On the tap of the meal, we should show a bottom sheet that shows
+        all categories of meals along with an option to add a meal
+        3. Add a button to choose a random meal
+        4. Add a space between the button  and category name to show the meal name
+        5. A hamburger icon in the menu bar to show a bottom sheet
+        6. This bottom sheet will show options like "see all meals", "add a meal", "See all categories", "Add a category"
+        -->
+
+        <!--
+            TODO:
+
+            ✔ Use a bottom bar with a hamburger icon
+            ☐ Create a separate content file
+            ✔
+
+        -->
+
+        <include
+            layout="@layout/content_meal_decider"/>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                style="@style/FabTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_restaurant_white_24dp"
+                app:layout_anchor="@id/bottom_app_bar"/>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabAlignmentMode="center"
+                style="@style/BottomAppBar"
+                app:navigationIcon="@drawable/ic_menu_white_24dp">
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

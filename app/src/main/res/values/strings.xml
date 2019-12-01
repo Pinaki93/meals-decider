@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Meal Decider</string>
+    <string name="app_name">Meal Chooser</string>
+    <string name="splash_bottom_text">Made with Love by Pinaki Acharya</string>
 </resources>

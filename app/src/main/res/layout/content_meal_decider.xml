@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_meal_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:alpha=".89"
+            app:layout_constraintVertical_bias=".30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Lunch"
+            android:padding="12dp"
+            android:textSize="24sp"
+            app:drawableTint="@color/colorPrimary"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_meal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            android:alpha=".60"
+            app:fontFamily="@font/lobster_regular"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/tv_meal_category"
+            android:text="Your meal will appear here"
+            android:textSize="60sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
